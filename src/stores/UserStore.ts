@@ -11,7 +11,7 @@ class UserStore {
     makeAutoObservable(this);
   }
 
-  async fetchSearchUsers(name: string) {
+  fetchSearchUsers = async (name: string) => {
     this.isLoading = true;
     this.error = null;
 
@@ -32,7 +32,7 @@ class UserStore {
         this.isLoading = false;
       });
     }
-  }
+  };
 }
 
 const userStore = new UserStore();
