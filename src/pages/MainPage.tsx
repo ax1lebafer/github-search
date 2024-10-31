@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { appRoutes } from "../lib/appRoutes.tsx";
+import Search from "../components/Search/Search.tsx";
+import SearchResult from "../components/SearchResult/SearchResult.tsx";
 
 function MainPage() {
   return (
@@ -9,9 +11,9 @@ function MainPage() {
           <img src="/github.svg" alt="Logo" width="100" height="100" />
         </Link>
       </div>
-      <div>
-        <input type="search" />
-      </div>
+
+      <Search />
+      <SearchResult />
     </main>
   );
 }
